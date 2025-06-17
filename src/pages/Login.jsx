@@ -24,13 +24,6 @@ console.log(log)
 
 function handleLogin(){
 console.log(log)
-    // // if(log.email == "hitisha@gmail.com" && log.password == "123")
-    // // {
-
-    // //     localStorage.setItem("auth", JSON.stringify(log))
-    // //     setAuth(log)
-    // //         navigate("/home")
-    // // }
     let users = JSON.parse(localStorage.getItem("user") )|| []
 
     let user = users.find(e => e.email == log.email && e.password == log.password)
